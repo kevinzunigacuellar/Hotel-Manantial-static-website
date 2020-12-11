@@ -1,81 +1,200 @@
-{% extends "website/layout.html" %}
-{% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block head %}
-<title>Hotel Manantial | Contacto</title>
-{% endblock %}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-{% block body %}
-<div class="container">
-  <div class="card mb-3">
-    <img src="{% static 'website/contacto/contacto-img.jpg' %}" class="card-img-top" alt="contacto-img">
-    <!-- Lineas de contacto -->
-    <div class="card-body">
-      <h1 class="card-title text-center" style="padding-bottom:20px;">Contacto y Reservas:</h1>
-      <ul class="list-inline mb-2 text-center">
-        <!-- Iconos -->
-        <li class="list-inline-item mr-3">
-          <a style="color: #0084ff; text-decoration: none;" href="https://m.me/hotelmanantialchurin" target="_blank">
-            <i class="fab fa-facebook-messenger fa-3x fa-fw"></i>
-            <p style="color: black;">Facebook Messenger</p>
-          </a>
+    <title>Hotel Manantial | Contacto</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
 
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css\bootstrap.css" rel="stylesheet" />
+    <link href="css\style.css" rel="stylesheet" />
+
+  </head>
+
+  <!-- Logo -->
+  <a id=imagen-logo href="#"><img src="img/logo2_img.png"></a>
+
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:#f38f22">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="inicio.html">Inicio</a>
         </li>
-        <li class="list-inline-item mr-3">
-          <a style="color: #25D366; text-decoration: none;" href="https://wa.me/+51992755015" target="_blank">
-            <i class="fab fa-whatsapp fa-3x fa-fw"></i>
-            <p style="color: black;">WhatsApp: +51 992 755 015</p>
-          </a>
+        <li class="nav-item">
+          <a class="nav-link" href="nosotros.html">Nosotros</a>
         </li>
-        <li class="list-inline-item mr-3">
-          <a style="color: #25D366; text-decoration: none;" href="tel:5554280940" target="_blank">
-            <i class="fas fa-phone-square-alt fa-3x fa-fw"></i>
-            <p style="color: black;"> Teléfono: +51 1 2373052 </p>
-          </a>
+        <li class="nav-item">
+          <a class="nav-link" href="servicios.html">Servicios</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="habitaciones.html">Habitaciones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="turismo.html">Turismo</a>
+        </li>
+
       </ul>
-      <!-- Mapa -->
-      <h1 class="card-title" style="text-align:center">Mapa:</h1>
-      <div class="card">
-        <div class="row no-gutters">
-          <div class="col-md-6 my">
-            <img src="{% static 'website/contacto/maps.PNG' %}" class="card-img"
-              alt="Mapa al hotel manantial de Churin">
-          </div>
-          <!-- Texto -->
-          <div class="col-md-6 my-auto">
-            <div class="card-body ">
-              <h2 class="card-title">Dirección:</h2>
-              <p class="card-text">Av. Victor Larco Herrera N°138 Churin, Churín 15270, Peru</p>
-              <div class="text-center">
-                <a href="https://g.page/hotel-manantial-de-churin?share" class="btn btn-info" target="_blank">Abrir
-                  en mapas</a>
+
+    </div>
+  </nav>
+  <section class="contenido" style="font-family:'Quicksand', sans-serif;">
+    <div class="container">
+      <div class="card mb-3">
+        <img src="img/contacto-img.jpg" class="card-img-top" alt="contacto-img">
+        <!-- Lineas de contacto -->
+        <div class="card-body">
+          <h1 class="card-title text-center" style="padding-bottom:20px;">Contacto y Reservas:</h1>
+          <ul class="list-inline mb-2 text-center">
+            <!-- Iconos -->
+            <li class="list-inline-item mr-3">
+              <a style="color: #0084ff; text-decoration: none;" href="https://m.me/hotelmanantialchurin"
+                target="_blank">
+                <i class="fab fa-facebook-messenger fa-3x fa-fw"></i>
+                <p style="color: black;">Facebook Messenger</p>
+              </a>
+
+            </li>
+            <li class="list-inline-item mr-3">
+              <a style="color: #25D366; text-decoration: none;" href="https://wa.me/+51992755015" target="_blank">
+                <i class="fab fa-whatsapp fa-3x fa-fw"></i>
+                <p style="color: black;">WhatsApp: +51 992 755 015</p>
+              </a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a style="color: #25D366; text-decoration: none;" href="tel:012373052" target="_blank">
+                <i class="fas fa-phone-square-alt fa-3x fa-fw"></i>
+                <p style="color: black;"> Teléfono: +51 1 2373052 </p>
+              </a>
+            </li>
+          </ul>
+          <!-- Mapa -->
+          <h1 class="card-title" style="text-align:center">Mapa:</h1>
+          <div class="card">
+            <div class="row no-gutters">
+              <div class="col-md-6 my">
+                <img src="img/maps.PNG" class="card-img" alt="Mapa al hotel manantial de Churin">
+              </div>
+              <!-- Texto -->
+              <div class="col-md-6 my-auto">
+                <div class="card-body ">
+                  <h2 class="card-title">Dirección:</h2>
+                  <p class="card-text">Av. Victor Larco Herrera N°138 Churin, Churín 15270, Peru</p>
+                  <div class="text-center">
+                    <a href="https://www.google.com/maps/place/Hotel+Manantial+de+Churin/@-10.8092699,-76.8772254,17z/data=!3m1!4b1!4m5!3m4!1s0x9107b9c08395a5f7:0x4fdec8c414562a6!8m2!3d-10.8092699!4d-76.8750367"
+                      class="btn btn-info" target="_blank">Abrir
+                      en mapas</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <br>
+          <h1 class="card-title text-center">Síganos en las redes sociales:</h1>
+          <ul class="list-inline mb-2 text-center">
+            <!-- Iconos -->
+            <li class="list-inline-item mr-3">
+              <a style="color: #0084ff; text-decoration: none;" href="https://www.facebook.com/174076475946892"
+                target="_blank">
+                <i class="fab fa-facebook-square fa-2x fa-fw"></i>
+                <p style="color: black;">Facebook</p>
+              </a>
+
+            </li>
+            <li class="list-inline-item mr-3">
+              <a style="color: pink; text-decoration: none;" href="https://www.instagram.com/hotelmanantialchurin/"
+                target="_blank">
+                <i class="fab fa-instagram fa-2x fa-fw"></i>
+                <p style="color: black;">Instragram</p>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <br>
-      <h1 class="card-title text-center">Síganos en las redes sociales:</h1>
-      <ul class="list-inline mb-2 text-center">
-        <!-- Iconos -->
-        <li class="list-inline-item mr-3">
-          <a style="color: #0084ff; text-decoration: none;" href="https://m.me/hotelmanantialchurin" target="_blank">
-            <i class="fab fa-facebook-square fa-2x fa-fw"></i>
-            <p style="color: black;">Facebook</p>
-          </a>
-
-        </li>
-        <li class="list-inline-item mr-3">
-          <a style="color: pink; text-decoration: none;" href="https://www.instagram.com/hotelmanantialchurin/"
-            target="_blank">
-            <i class="fab fa-instagram fa-2x fa-fw"></i>
-            <p style="color: black;">Instragram</p>
-          </a>
-        </li>
-      </ul>
     </div>
-  </div>
-</div>
+  </section>
+  <!-- Footer -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-{% endblock %}
+  <footer class="footer sticky-bottom" style="font-family:'Quicksand', sans-serif;">
+    <div class=" container">
+      <div class="row">
+        <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item mr-3">
+              <a href="nosotros.html" style="text-decoration: none;">Nosotros</a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="contacto.html" style="text-decoration: none;">Contacto</a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="servicios.html" style="text-decoration: none;">Servicios</a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="turismo.html" style="text-decoration: none;">Turismo</a>
+            </li>
+          </ul>
+          <h6 class="text-white">Tel: 2373052 / 2382019</h6>
+          <p class="text-white small mb-4 mb-lg-0">&copy; Hotel Manantial de Churin, 2020. Todos los
+            derechos
+            reservados.</p>
+        </div>
+        <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mr-3">
+              <a href="https://www.facebook.com/hotelmanantialchurin/" target="_blank">
+                <i class="fab fa-facebook fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="https://www.instagram.com/hotelmanantialchurin/" target="_blank">
+                <i class="fab fa-instagram fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="https://wa.me/+51992755015" target="_blank">
+                <i class="fab fa-whatsapp fa-2x fa-fw"></i>
+              </a>
+            </li>
+            <li class="list-inline-item mr-3">
+              <a href="tel:012373052" target="_blank">
+                <i class="fas fa-phone-square-alt fa-2x fa-fw"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Core JS-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>

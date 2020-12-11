@@ -1,125 +1,262 @@
-{% extends "website/layout.html" %}
-{% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block head %}
-<title>Hotel Manantial | Turismo</title>
-{% endblock %}
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
 
-{% block body %}
+        <title>Hotel Manantial | Turismo</title>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
 
-<div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-        <div class="col mb-4">
-            <div class="card">
-                <img src="{% static 'website/turismo/meseta-foto.jpg' %}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3 class="card-title">La Meseta</h3>
-                    <p class="card-text" style="text-align: justify;">Este complejo se encuentra en la parte alta de
-                        Churín, a unos 400 metros de distancia del centro. Todas las piscinas se encuentran bajo
-                        techo para evitar que los cambios bruscos de temperatura al cambiar de piscinas.</p>
-                    <div class="text-center" style="padding-top: 20px;">
-                        <a href="https://goo.gl/maps/4Nv1C2kuyQ22MHt26" target="_blank" class="btn btn-info">Abrir en
-                            mapas</a>
-                    </div>
-                </div>
-            </div>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+            rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css\bootstrap.css" rel="stylesheet" />
+        <link href="css\style.css" rel="stylesheet" />
+
+    </head>
+
+    <!-- Logo -->
+    <a id=imagen-logo href="#"><img src="img/logo2_img.png"></a>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color:#f38f22">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="habitaciones.html">Habitaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="turismo.html">Turismo</a>
+                </li>
+
+            </ul>
+
         </div>
-        <div class="col mb-4">
-            <div class="card">
-                <img src="{% static 'website/turismo/foto-prueba1.jpg' %}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3 class="card-title">Complejo Mamahuarmi</h3>
-                    <p class="card-text" style="text-align: justify;">Este es uno de los lugares más destacados de
-                        Churín, ya que todas sus piscinas
-                        se encuentran al aire libre, rodeadas de áreas verdes y piedras. Su nombre se debe a una leyenda
-                        que involucra a un soldado español y a la hija del cacique de la población.</p>
-                    <div class="text-center" style="padding-top: 20px;">
-                        <a href="https://goo.gl/maps/gzNsxhg1evSApU7B8" target="_blank" class="btn btn-info">Abrir en
-                            mapas</a>
+    </nav>
+    <section class="contenido" style="font-family:'Quicksand', sans-serif;">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="img/meseta-foto.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">La Meseta</h3>
+                            <p class="card-text" style="text-align: justify;">Este complejo se encuentra en la parte
+                                alta de
+                                Churín, a unos 400 metros de distancia del centro. Todas las piscinas se encuentran bajo
+                                techo para evitar que los cambios bruscos de temperatura al cambiar de piscinas.</p>
+                            <div class="text-center" style="padding-top: 20px;">
+                                <a href="https://goo.gl/maps/4Nv1C2kuyQ22MHt26" target="_blank"
+                                    class="btn btn-info">Abrir en
+                                    mapas</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="col mb-4">
-            <div class="card">
-                <img src="{% static 'website/turismo/juventud.jpg' %}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3 class="card-title">Complejo de La Juventud</h3>
-                    <p class="card-text" style="text-align: justify;">El manantial "La Juventud", esta rodeado de
-                        vegetación de molles y eucaliptos.
-                        Cuenta con tres piscinas juntas y un potente chorro de aguas termales, que sirven para darse
-                        masajes.
-                        Estas aguas termo-medicinales que tienen una temperatura de 32 grados centígrados.</p>
-                    <div class="text-center" style="padding-top: 20px;">
-                        <a href="https://goo.gl/maps/xCZTTtWNpiCSgxd37" target="_blank" class="btn btn-info">Abrir en
-                            mapas</a>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="img/foto-prueba1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Complejo Mamahuarmi</h3>
+                            <p class="card-text" style="text-align: justify;">Este es uno de los lugares más destacados
+                                de
+                                Churín, ya que todas sus piscinas
+                                se encuentran al aire libre, rodeadas de áreas verdes y piedras. Su nombre se debe a una
+                                leyenda
+                                que involucra a un soldado español y a la hija del cacique de la población.</p>
+                            <div class="text-center" style="padding-top: 20px;">
+                                <a href="https://goo.gl/maps/gzNsxhg1evSApU7B8" target="_blank"
+                                    class="btn btn-info">Abrir en
+                                    mapas</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="col mb-4">
-            <div class="card">
-                <img src="{% static 'website/turismo/tingo.jpg' %}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3 class="card-title">Baños de Tingo</h3>
-                    <p class="card-text" style="text-align: justify;">Sus aguas son de color marrón. Cuenta con 4
-                        piscinas y servicio de sauna,
-                        masajes y baños de barro. Se dice que sus aguas alivian enfermedades como: el reumatismo,
-                        parálisis de cuerpo, males de la próstata, ovarios, entre otros. El precio de ingreso varía
-                        entre 3 a 15 soles.</p>
-                    <div class="text-center" style="padding-top: 20px;">
-                        <a href="https://goo.gl/maps/ura25RBuqe9kE3xx9" target="_blank" class="btn btn-info">Abrir en
-                            mapas</a>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="img/juventud.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Complejo de La Juventud</h3>
+                            <p class="card-text" style="text-align: justify;">El manantial "La Juventud", esta rodeado
+                                de
+                                vegetación de molles y eucaliptos.
+                                Cuenta con tres piscinas juntas y un potente chorro de aguas termales, que sirven para
+                                darse
+                                masajes.
+                                Estas aguas termo-medicinales que tienen una temperatura de 32 grados °C.</p>
+                            <div class="text-center" style="padding-top: 20px;">
+                                <a href="https://goo.gl/maps/xCZTTtWNpiCSgxd37" target="_blank"
+                                    class="btn btn-info">Abrir en
+                                    mapas</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="col mb-4">
-            <div class="card">
-                <img src="{% static 'website/turismo/huancahuasi.jpg' %}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3 class="card-title">Baños de Huancahuasi</h3>
-                    <p class="card-text" style="text-align: justify;">A solo hora y media de Churin (33 km), se llega a
-                        los baños termales de Huancahuasi ubicados a 3350 msnm. Estas
-                        aguas son conocidas por aliviar el reumatismo y la artritis.</p>
-                    <div class="text-center" style="padding-top: 20px;">
-                        <a href="https://goo.gl/maps/TnBu7977Nfk65pha7" target="_blank" class="btn btn-info">Abrir en
-                            mapas</a>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="img/tingo.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Baños de Tingo</h3>
+                            <p class="card-text" style="text-align: justify;">Sus aguas son de color marrón. Cuenta con
+                                4
+                                piscinas y servicio de sauna,
+                                masajes y baños de barro. Se dice que sus aguas alivian enfermedades como: el
+                                reumatismo,
+                                parálisis de cuerpo, males de la próstata, ovarios, entre otros. El precio de ingreso
+                                varía
+                                entre 3 a 15 soles.</p>
+                            <div class="text-center" style="padding-top: 20px;">
+                                <a href="https://goo.gl/maps/ura25RBuqe9kE3xx9" target="_blank"
+                                    class="btn btn-info">Abrir en
+                                    mapas</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="col mb-4">
-            <div class="card">
-                <img src="{% static 'website/turismo/picoy.jpg' %}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3 class="card-title">Baños de Picoy</h3>
-                    <p class="card-text" style="text-align: justify;"> Picoy cuenta con un área de baños termales de uso
-                        general que comprende dos piscinas grandes y tres pozas techadas para uso privado.</p>
-                    <div class="text-center" style="padding-top: 20px;">
-                        <a href="https://goo.gl/maps/4KkrsJEz4FQhT9vK8" target="_blank" class="btn btn-info">Abrir en
-                            mapas</a>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="img/huancahuasi.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Baños de Huancahuasi</h3>
+                            <p class="card-text" style="text-align: justify;">A solo hora y media de Churín (33 km), se
+                                llega a
+                                los baños termales de Huancahuasi ubicados a 3350 msnm. Estas
+                                aguas son conocidas por aliviar el reumatismo y la artritis.</p>
+                            <div class="text-center" style="padding-top: 20px;">
+                                <a href="https://goo.gl/maps/TnBu7977Nfk65pha7" target="_blank"
+                                    class="btn btn-info">Abrir en
+                                    mapas</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="col mb-4">
-            <div class="card">
-                <img src="{% static 'website/turismo/leondormido.jpg' %}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h3 class="card-title">Nevado Raura</h3>
-                    <p class="card-text" style="text-align: justify;">Este nevado que sobrepasan los 5000 metros de
-                        altitud. Se caracteriza por tener picos de roca y
-                        hielo, lagunas de increíbles colores (azul, verde y turquesa) y estrechos valles.</p>
-                    <div class="text-center" style="padding-top: 20px;">
-                        <a href="https://goo.gl/maps/ZULcUNUMSqAxD1wU6" target="_blank" class="btn btn-info">Abrir en
-                            mapas</a>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="img/picoy.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Baños de Picoy</h3>
+                            <p class="card-text" style="text-align: justify;"> Picoy cuenta con un área de baños
+                                termales de uso
+                                general que comprende dos piscinas grandes y tres pozas techadas para uso privado.</p>
+                            <div class="text-center" style="padding-top: 20px;">
+                                <a href="https://goo.gl/maps/4KkrsJEz4FQhT9vK8" target="_blank"
+                                    class="btn btn-info">Abrir en
+                                    mapas</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="col mb-4">
+                    <div class="card">
+                        <img src="img/leondormido.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Nevado Raura</h3>
+                            <p class="card-text" style="text-align: justify;">Este nevado que sobrepasan los 5000 metros
+                                de
+                                altitud. Se caracteriza por tener picos de roca y
+                                hielo, lagunas de increíbles colores (azul, verde y turquesa) y estrechos valles.</p>
+                            <div class="text-center" style="padding-top: 20px;">
+                                <a href="https://goo.gl/maps/ZULcUNUMSqAxD1wU6" target="_blank"
+                                    class="btn btn-info">Abrir en
+                                    mapas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
-    </div>
-</div>
+    </section>
+    <!-- Footer -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-{% endblock %}
+    <footer class="footer sticky-bottom" style="font-family:'Quicksand', sans-serif;">
+        <div class=" container">
+            <div class="row">
+                <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item mr-3">
+                            <a href="nosotros.html" style="text-decoration: none;">Nosotros</a>
+                        </li>
+                        <li class="list-inline-item mr-3">
+                            <a href="contacto.html" style="text-decoration: none;">Contacto</a>
+                        </li>
+                        <li class="list-inline-item mr-3">
+                            <a href="servicios.html" style="text-decoration: none;">Servicios</a>
+                        </li>
+                        <li class="list-inline-item mr-3">
+                            <a href="turismo.html" style="text-decoration: none;">Turismo</a>
+                        </li>
+                    </ul>
+                    <h6 class="text-white">Tel: 2373052 / 2382019</h6>
+                    <p class="text-white small mb-4 mb-lg-0">&copy; Hotel Manantial de Churin, 2020. Todos los
+                        derechos
+                        reservados.</p>
+                </div>
+                <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item mr-3">
+                            <a href="https://www.facebook.com/hotelmanantialchurin/" target="_blank">
+                                <i class="fab fa-facebook fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mr-3">
+                            <a href="https://www.instagram.com/hotelmanantialchurin/" target="_blank">
+                                <i class="fab fa-instagram fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mr-3">
+                            <a href="https://wa.me/+51992755015" target="_blank">
+                                <i class="fab fa-whatsapp fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item mr-3">
+                            <a href="tel:012373052" target="_blank">
+                                <i class="fas fa-phone-square-alt fa-2x fa-fw"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Core JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+</html>
