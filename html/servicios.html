@@ -1,0 +1,94 @@
+{% extends "website/layout.html" %}
+{% load static %}
+
+{% block head %}
+<title>Hotel Manantial | Servicios</title>
+{% endblock %}
+
+{% block body %}
+
+<div class="container" style="padding-bottom: 20px;">
+    <div class="card">
+        <div class=" row no-gutters">
+            <div class="col-md-8">
+                <img src="{% static 'website/servicios/gym.jpg' %}" class="card-img"
+                    alt="Mapa al hotel manantial de Churin">
+            </div>
+            <div class="col-md-4 my-auto">
+                <div class="card-body">
+                    <h1 class="card-title text-center">Gimnasio</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="padding-bottom: 20px;">
+    <div class="card">
+        <div class=" row no-gutters">
+            <div class="col-md-8">
+                <img src="{% static 'website/servicios/cafeteria.jpg' %}" class="card-img"
+                    alt="Mapa al hotel manantial de Churin">
+            </div>
+            <div class="col-md-4 my-auto">
+                <div class="card-body">
+                    <h1 class="card-title text-center">Cafe-Bar</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="padding-bottom: 20px;">
+    <div class="card">
+        <div class=" row no-gutters">
+            <div class="col-md-8">
+                <img src="{% static 'website/servicios/reuniones.jpg' %}" class="card-img"
+                    alt="Mapa al hotel manantial de Churin">
+            </div>
+            <div class="col-md-4 my-auto">
+                <div class="card-body">
+                    <h1 class="card-title text-center">Sala de conferencias</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="padding-bottom: 20px;">
+    <div class="card">
+        <div class=" row no-gutters">
+            <div class="col-md-8">
+                <img src="{% static 'website/servicios/parking.jpg' %}" class="card-img"
+                    alt="Mapa al hotel manantial de Churin">
+            </div>
+            <div class="col-md-4 my-auto">
+                <div class="card-body">
+                    <h1 class="card-title text-center">Parking</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="padding-bottom: 20px;">
+    <div class="card">
+        <div class=" row no-gutters">
+            <div class="col-md-8">
+                <img src="{% static 'website/servicios/lavanderia.jpg' %}" class="card-img"
+                    alt="Mapa al hotel manantial de Churin">
+            </div>
+            <div class="col-md-4 my-auto">
+                <div class="card-body">
+                    <h1 class="card-title text-center">Lavanderia</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="alert alert-warning container" role="alert" style="margin-bottom: 0px; padding-bottom: 20px;">
+    Para cuidar la salud de nuestros clientes, los servicios de: gimnasio, cafe-bar y sala de conferencias se encuentran
+    suspendidos a pedido del ministerio de salud por COVID-19. Agradecemos su comprension y su preferencia.
+</div>
+{% endblock %}

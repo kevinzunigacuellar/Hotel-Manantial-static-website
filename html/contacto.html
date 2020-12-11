@@ -1,0 +1,81 @@
+{% extends "website/layout.html" %}
+{% load static %}
+
+{% block head %}
+<title>Hotel Manantial | Contacto</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+  <div class="card mb-3">
+    <img src="{% static 'website/contacto/contacto-img.jpg' %}" class="card-img-top" alt="contacto-img">
+    <!-- Lineas de contacto -->
+    <div class="card-body">
+      <h1 class="card-title text-center" style="padding-bottom:20px;">Contacto y Reservas:</h1>
+      <ul class="list-inline mb-2 text-center">
+        <!-- Iconos -->
+        <li class="list-inline-item mr-3">
+          <a style="color: #0084ff; text-decoration: none;" href="https://m.me/hotelmanantialchurin" target="_blank">
+            <i class="fab fa-facebook-messenger fa-3x fa-fw"></i>
+            <p style="color: black;">Facebook Messenger</p>
+          </a>
+
+        </li>
+        <li class="list-inline-item mr-3">
+          <a style="color: #25D366; text-decoration: none;" href="https://wa.me/+51992755015" target="_blank">
+            <i class="fab fa-whatsapp fa-3x fa-fw"></i>
+            <p style="color: black;">WhatsApp: +51 992 755 015</p>
+          </a>
+        </li>
+        <li class="list-inline-item mr-3">
+          <a style="color: #25D366; text-decoration: none;" href="tel:5554280940" target="_blank">
+            <i class="fas fa-phone-square-alt fa-3x fa-fw"></i>
+            <p style="color: black;"> Teléfono: +51 1 2373052 </p>
+          </a>
+        </li>
+      </ul>
+      <!-- Mapa -->
+      <h1 class="card-title" style="text-align:center">Mapa:</h1>
+      <div class="card">
+        <div class="row no-gutters">
+          <div class="col-md-6 my">
+            <img src="{% static 'website/contacto/maps.PNG' %}" class="card-img"
+              alt="Mapa al hotel manantial de Churin">
+          </div>
+          <!-- Texto -->
+          <div class="col-md-6 my-auto">
+            <div class="card-body ">
+              <h2 class="card-title">Dirección:</h2>
+              <p class="card-text">Av. Victor Larco Herrera N°138 Churin, Churín 15270, Peru</p>
+              <div class="text-center">
+                <a href="https://g.page/hotel-manantial-de-churin?share" class="btn btn-info" target="_blank">Abrir
+                  en mapas</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h1 class="card-title text-center">Síganos en las redes sociales:</h1>
+      <ul class="list-inline mb-2 text-center">
+        <!-- Iconos -->
+        <li class="list-inline-item mr-3">
+          <a style="color: #0084ff; text-decoration: none;" href="https://m.me/hotelmanantialchurin" target="_blank">
+            <i class="fab fa-facebook-square fa-2x fa-fw"></i>
+            <p style="color: black;">Facebook</p>
+          </a>
+
+        </li>
+        <li class="list-inline-item mr-3">
+          <a style="color: pink; text-decoration: none;" href="https://www.instagram.com/hotelmanantialchurin/"
+            target="_blank">
+            <i class="fab fa-instagram fa-2x fa-fw"></i>
+            <p style="color: black;">Instragram</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

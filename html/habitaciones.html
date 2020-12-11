@@ -1,0 +1,147 @@
+{% extends "website/layout.html" %}
+{% load static %}
+
+{% block head %}
+<title>Hotel Manantial | Habitaciones</title>
+{% endblock %}
+
+{% block body %}
+<!-- Cartas: Habitaciones -->
+<!-- Doble Premium -->
+<div class="container">
+    <div class="card mb-3">
+        <div class="row no-gutters">
+            <div class="col-md-4 my-auto">
+                <img src="{% static 'website/habitaciones/doble.jpg' %}" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title">{{habitaciones.0.nombre}}</h2>
+                    <p class="card-text" style="text-align: justify;">{{habitaciones.0.descripcion}}</p>
+                    <ul class="list-inline mb-0" style="padding-bottom: 20px;">
+                        <li class="list-inline-item" data-toggle="tooltip" title="Wi-Fi">
+                            <i class="fas fa-wifi fa-lg"></i>
+                        </li>
+                        <li class="list-inline-item" data-toggle="tooltip" title="TV">
+                            <i class="fas fa-tv fa-lg"></i>
+                        </li>
+                        <li class="list-inline-item" data-toggle="tooltip" title="Ducha">
+                            <i class="fas fa-shower fa-lg"></i>
+                        </li>
+                        <li class="list-inline-item" data-toggle="tooltip" title="Desayuno">
+                            <i class="fas fa-coffee fa-lg"></i>
+                        </li>
+                        <li class="list-inline-item" data-toggle="tooltip" title="Estacionamiento">
+                            <i class="fas fa-car fa-lg"></i>
+                        </li>
+                        <li class="list-inline-item" data-toggle="tooltip" title="Gimnasio">
+                            <i class="fas fa-dumbbell fa-lg"></i>
+                        </li>
+                        <li class="list-inline-item" data-toggle="tooltip" title="No fumar">
+                            <i class="fas fa-smoking-ban fa-lg"></i>
+                        </li>
+                    </ul>
+                    <br>
+                    <a class="btn-holder-ws" style="color: #25D366; text-decoration: none; text-align: center;"
+                        href="https://wa.me/+51992755015" target="_blank">
+                        <i class="fab fa-whatsapp fa-3x fa-fw"></i>
+                    </a>
+                    <div class="btn  btn-holder noHover font-weight-bold" style="background-color: #f38f22;">
+                        S/.
+                        {{habitaciones.0.precio}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Matrimonial -->
+<div class="container">
+    <div class="card mb-3">
+        <div class="row no-gutters">
+            <a class="col-md-4 my-auto" href="https://wa.me/+51992755015" target="_blank">
+                <img src="{% static 'website/habitaciones/matrimonial75.jpg' %}" class="card-img" alt="...">
+            </a>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title">{{habitaciones.1.nombre}}</h2>
+                    <p class="card-text" style="text-align: justify;">{{habitaciones.1.descripcion}}</p>
+                    <ul class="list-inline mb-0" style="padding-bottom: 20px;">
+                        <li class="list-inline-item" data-toggle="tooltip" title="Wi-Fi">
+                            <i class="fas fa-wifi fa-lg"></i>
+                        </li>
+                        <li class="list-inline-item" data-toggle="tooltip" title="TV">
+                            <i class="fas fa-tv fa-lg"></i>
+                        </li>
+                        <li class="list-inline-item" data-toggle="tooltip" title="Ducha">
+                            <i class="fas fa-shower fa-lg"></i>
+                        </li>
+                        <li class="list-inline-item" data-toggle="tooltip" title="Desayuno">
+                            <i class="fas fa-coffee fa-lg"></i>
+                        </li>
+                        <li class="list-inline-item" data-toggle="tooltip" title="Estacionamiento">
+                            <i class="fas fa-car fa-lg"></i>
+                        </li>
+                        <li class="list-inline-item" data-toggle="tooltip" title="Gimnasio">
+                            <i class="fas fa-dumbbell fa-lg"></i>
+                        <li class="list-inline-item" data-toggle="tooltip" title="No fumar">
+                            <i class="fas fa-smoking-ban fa-lg"></i>
+                        </li>
+                    </ul>
+                    <br>
+                    <a class="btn-holder-ws" style="color: #25D366; text-decoration: none; text-align: center;"
+                        href="https://wa.me/+51992755015" target="_blank">
+                        <i class="fab fa-whatsapp fa-3x fa-fw"></i>
+                    </a>
+                    <div class="btn  btn-holder noHover font-weight-bold"
+                        style="background-color: #f38f22; margin-top: 20px;">
+                        S/.{{habitaciones.1.precio}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="card mb-3">
+        <div class="row no-gutters">
+            <div class="col-md-4 my-auto">
+                <img src="{% static 'website/habitaciones/triple75.jpg' %}" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title">{{habitaciones.2.nombre}}</h2>
+                    <p class="card-text" style="text-align: justify;">{{habitaciones.2.descripcion}}</p>
+                    <ul class="list-inline mb-0" style="padding-bottom: 20px;">
+                        <li class="list-inline-item" data-toggle="tooltip" title="Wi-Fi">
+                            <i class="fas fa-wifi fa-lg"></i>
+                        </li>
+                        <li class="list-inline-item" data-toggle="tooltip" title="TV">
+                            <i class="fas fa-tv fa-lg"></i>
+                        </li>
+                        <li class="list-inline-item" data-toggle="tooltip" title="Ducha">
+                            <i class="fas fa-shower fa-lg"></i>
+                        </li>
+                        <li class="list-inline-item" data-toggle="tooltip" title="Desayuno"> <i
+                                class="fas fa-coffee fa-lg"></i>
+                        </li>
+                        <li class="list-inline-item" data-toggle="tooltip" title="Estacionamiento">
+                            <i class="fas fa-car fa-lg"></i>
+                        </li>
+                        <li class="list-inline-item" data-toggle="tooltip" title="Gimnasio">
+                            <i class="fas fa-dumbbell fa-lg"></i>
+                        <li class="list-inline-item" data-toggle="tooltip" title="No fumar">
+                            <i class="fas fa-smoking-ban fa-lg"></i>
+                        </li>
+                    </ul>
+                    <br>
+                    <a class="btn-holder-ws" style="color: #25D366; text-decoration: none; text-align: center;"
+                        href="https://wa.me/+51992755015" target="_blank">
+                        <i class="fab fa-whatsapp fa-3x fa-fw"></i>
+                    </a>
+                    <div class="btn btn-holder noHover font-weight-bold" style="background-color: #f38f22;">
+                        S/.{{habitaciones.2.precio}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,54 @@
+{% extends "website/layout.html" %}
+{% load static %}
+
+{% block head %}
+<title>Hotel Manantial | Nosotros</title>
+{% endblock %}
+
+{% block body %}
+<div class="container" style="padding: 10em 5em;">
+    <h1>"Nuestra misión es de brindarle el mejor servicio de hotel para hacer que su experiencia
+        en Churin sea
+        inolvidable."</h1>
+    <p class="text-right"><em>Dimas Zuñiga Bernabe - Gerente General</em></p>
+</div>
+
+<div class="container-fluid" style="background-color: white; padding-bottom: 20px;">
+    <div class="container">
+        <h1 class="card-title rounded-0" style="padding: 20px 0px;">Historia del Hotel Manantial</h1>
+        <div class="card rounded-0">
+            <div class=" row no-gutters">
+                <div class="col-md-6 my-auto">
+                    <div class="card-body ">
+                        <h2 class="card-title"></h2>
+                        <p class="card-text" style="text-align: justify;">
+                            El Hotel Manantial es un proyecto que nació de dos hermanos que migraron de la sierra a la
+                            cuidad de Lima buscando un mejor futuro. Lejos de nuestro pueblo natal, regresamos a Churin
+                            cada cierto tiempo a visitar a la familia. Una oportunidad se nos presento en
+                            una visita familiar para adquirir un terreno en Churín y así tener un lugar donde quedarnos,
+                            un lugar para poder estar junto a nuestras hermanas y un lugar para nuestros padres.
+                            <br><br>
+                            Al ver las necesidades de los visitantes a Churín por ser un lugar lleno de aguas termales y
+                            manantiales que brotaban de los cerros; nos dimos cuenta que sería una buena decisión
+                            invertir en un hospedaje. Así con el paso de los años hemos ido construyendo y expandiendo
+                            las instalaciones de lo que era nuestra casa familiar en el Hotel Manantial. Hoy estamos
+                            enfocados en brindar un servicio eficiente y excelente para todos nuestros huéspedes.
+                            <br><br>
+                            Encontrar el nombre para nuestro hotel fue muy difícil y requirío de mucho tiempo. Un día
+                            desperté pensando en las aguas termales y los manantiales de mi
+                            pueblo y así que decidí ponerle Manantial. Estoy muy orgulloso del proyecto y del nombre.
+                            Deseo aprovechar esta oportunidad para agradecer a Dios, a mis padres a todos los que nos
+                            apoyaron con su trabajo para poder hacer del Hotel Manantial uno de los mejores hoteles de
+                            Churín.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 my-auto">
+                    <img src="{% static 'website/nosotros/historia.jpeg' %}" class="card-img rounded-0"
+                        alt="Mapa al hotel manantial de Churin">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
